@@ -13,13 +13,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+       setUpUI()
+        
     }
 
 
 }
 
+extension ViewController{
+    
+    func setUpUI() -> Void {
+
+        let rect = CGRect(x: 0, y: 0, width: kScreenW, height: 200)
+        let bannerView = KTBanner(frame: rect, imageNames: ["hulu","life"], timeInterVal: 3)
+        view.addSubview(bannerView)
+ 
+    }
+}

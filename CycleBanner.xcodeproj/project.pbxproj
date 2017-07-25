@@ -14,6 +14,10 @@
 		A477A1EF1F25C7B900AB282F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477A1ED1F25C7B900AB282F /* LaunchScreen.storyboard */; };
 		A477A1FA1F25C7B900AB282F /* CycleBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A1F91F25C7B900AB282F /* CycleBannerTests.swift */; };
 		A477A2051F25C7B900AB282F /* CycleBannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A2041F25C7B900AB282F /* CycleBannerUITests.swift */; };
+		A477A2171F25D0E200AB282F /* KTBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A2161F25D0E200AB282F /* KTBanner.swift */; };
+		A477A2191F25DC5F00AB282F /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A2181F25DC5F00AB282F /* UIColor-Extention.swift */; };
+		A4934ACA1F2736FE0055F76F /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4934AC81F2736FE0055F76F /* BannerCollectionViewCell.swift */; };
+		A4934ACB1F2736FE0055F76F /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4934AC91F2736FE0055F76F /* BannerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		A477A2001F25C7B900AB282F /* CycleBannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleBannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477A2041F25C7B900AB282F /* CycleBannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleBannerUITests.swift; sourceTree = "<group>"; };
 		A477A2061F25C7B900AB282F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A477A2161F25D0E200AB282F /* KTBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTBanner.swift; sourceTree = "<group>"; };
+		A477A2181F25DC5F00AB282F /* UIColor-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
+		A4934AC81F2736FE0055F76F /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4934AC91F2736FE0055F76F /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,12 @@
 		A477A1E31F25C7B900AB282F /* CycleBanner */ = {
 			isa = PBXGroup;
 			children = (
+				A477A2181F25DC5F00AB282F /* UIColor-Extention.swift */,
 				A477A1E41F25C7B900AB282F /* AppDelegate.swift */,
 				A477A1E61F25C7B900AB282F /* ViewController.swift */,
+				A477A2161F25D0E200AB282F /* KTBanner.swift */,
+				A4934AC81F2736FE0055F76F /* BannerCollectionViewCell.swift */,
+				A4934AC91F2736FE0055F76F /* BannerCollectionViewCell.xib */,
 				A477A1E81F25C7B900AB282F /* Main.storyboard */,
 				A477A1EB1F25C7B900AB282F /* Assets.xcassets */,
 				A477A1ED1F25C7B900AB282F /* LaunchScreen.storyboard */,
@@ -237,6 +249,7 @@
 			files = (
 				A477A1EF1F25C7B900AB282F /* LaunchScreen.storyboard in Resources */,
 				A477A1EC1F25C7B900AB282F /* Assets.xcassets in Resources */,
+				A4934ACB1F2736FE0055F76F /* BannerCollectionViewCell.xib in Resources */,
 				A477A1EA1F25C7B900AB282F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A477A2171F25D0E200AB282F /* KTBanner.swift in Sources */,
 				A477A1E71F25C7B900AB282F /* ViewController.swift in Sources */,
+				A477A2191F25DC5F00AB282F /* UIColor-Extention.swift in Sources */,
+				A4934ACA1F2736FE0055F76F /* BannerCollectionViewCell.swift in Sources */,
 				A477A1E51F25C7B900AB282F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +532,7 @@
 				A477A20B1F25C7B900AB282F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A477A20C1F25C7B900AB282F /* Build configuration list for PBXNativeTarget "CycleBannerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				A477A20E1F25C7B900AB282F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A477A20F1F25C7B900AB282F /* Build configuration list for PBXNativeTarget "CycleBannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				A477A2111F25C7B900AB282F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -36,6 +36,18 @@
 		<data>
 		6uVDZkIhep2A0Mds0aRlzfxTKwY=
 		</data>
+		<key>Frameworks/Kingfisher.framework/Info.plist</key>
+		<data>
+		viF72E8uR+m79fjVeXB+zq+c50Y=
+		</data>
+		<key>Frameworks/Kingfisher.framework/Kingfisher</key>
+		<data>
+		FRTcNzPbk19d/OcN65SRF2G5m8s=
+		</data>
+		<key>Frameworks/Kingfisher.framework/_CodeSignature/CodeResources</key>
+		<data>
+		+sCtylKxRA4Q537PES0OuXbFyyk=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		+msuybEsPPMR2cLaC0bH4tCpSWA=
@@ -177,6 +189,39 @@
 			<key>hash2</key>
 			<data>
 			n77gcfHSIiUyrhWtIYi+D5SYO4MKZxOFbH25UbWcvPw=
+			</data>
+		</dict>
+		<key>Frameworks/Kingfisher.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			viF72E8uR+m79fjVeXB+zq+c50Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			R0niFdF/LEIFL68fg5pMJl2RB1OSKYp5KXVbGUG+NCk=
+			</data>
+		</dict>
+		<key>Frameworks/Kingfisher.framework/Kingfisher</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FRTcNzPbk19d/OcN65SRF2G5m8s=
+			</data>
+			<key>hash2</key>
+			<data>
+			KNAhN0JvW5FshJCA78vZPC/OeCRdIfo9RDBvbjDz0RA=
+			</data>
+		</dict>
+		<key>Frameworks/Kingfisher.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+sCtylKxRA4Q537PES0OuXbFyyk=
+			</data>
+			<key>hash2</key>
+			<data>
+			kGXUL8+q0ywZ0bovhYfcmDn4mA342mlrjQZWFUznXb0=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>

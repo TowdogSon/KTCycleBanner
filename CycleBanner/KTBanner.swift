@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
 let Kcell    = "bannerCell"
@@ -16,8 +17,22 @@ class KTBanner: UIView {
     //声明属性
     var timer:Timer!
     var currentIndex:Int!
-    var imageNames:[String]!
+    var imageNames:[String]?
+    var imageUrls:[String]?
     var totalCount:Int!
+    var pageContr : UIPageControl!
+    var itemCounts : Int{
+
+        get{
+            if self.imageNames != nil {
+                return self.imageNames!.count
+            }else{
+                return self.imageUrls!.count
+            }
+        }
+    }
+    
+    
     //getter方法
     var _timeInterval :TimeInterval=2
     var timeInterval:TimeInterval{
@@ -46,7 +61,14 @@ class KTBanner: UIView {
         return collectView
     }()
 
-    //构造方法
+    
+    /// 显示本地图片的轮播图
+    ///
+    /// - Parameters:
+    ///   - frame: frame
+    ///   - imageNames: images
+    ///   - timeInterVal: eg:3
+    
     init(frame: CGRect, imageNames:[String],timeInterVal:TimeInterval) {
         super.init(frame: frame)
         self.imageNames=imageNames
@@ -55,6 +77,19 @@ class KTBanner: UIView {
         setUp()
     }
     
+    /// 网络图片显示
+    ///
+    /// - Parameters:
+    ///   - frame: frame
+    ///   - imageUrls: urls
+    ///   - timeInterVal: eg:3
+    init(frame: CGRect, imageUrls:[String],timeInterVal:TimeInterval) {
+        super.init(frame: frame)
+        self.imageUrls=imageUrls
+        totalCount=imageUrls.count*10;
+        timeInterval=timeInterVal
+        setUp()
+    }
     
     required init?(coder aDecoder: NSCoder) {
               fatalError("init(coder:) has not been implemented")
@@ -65,7 +100,14 @@ class KTBanner: UIView {
 extension KTBanner:UICollectionViewDelegate,UICollectionViewDataSource{
     
     func setUp(){
+        //pageContr
+        pageContr = UIPageControl(frame: CGRect(x:(kScreenW/2)-50, y: self.bounds.height-30, width:100, height:30))
+        pageContr.numberOfPages=itemCounts
         addSubview(collectionView)
+        if pageContr.numberOfPages>1 {
+         addSubview(pageContr)
+        }
+        
         currentIndex=0
         timer = Timer.scheduledTimer(withTimeInterval:TimeInterval(timeInterval), repeats: true, block: { (timer) in
             self.scrollToNext()
@@ -75,9 +117,16 @@ extension KTBanner:UICollectionViewDelegate,UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Kcell, for: indexPath) as!BannerCollectionViewCell
-    
-        let i = indexPath.row%self.imageNames.count
-        cell.image.image=UIImage(named: self.imageNames[i])
+        let i = indexPath.row%itemCounts
+        
+        guard  imageUrls != nil else {
+         
+            cell.image.image=UIImage(named:imageNames![i])
+            return cell
+        }
+       
+        let url = URL(string: imageUrls![i])
+        cell.image.kf.setImage(with: url)
         return cell
     }
     
@@ -93,7 +142,7 @@ extension KTBanner{
  
     func scrollToNext() -> Void {
         if currentIndex+1>=totalCount {
-            
+           
             // lastIndex turn to middleIndex
             
             currentIndex=totalCount/2
@@ -104,7 +153,7 @@ extension KTBanner{
        let indexpath = IndexPath(row: currentIndex+1, section: 0)
        collectionView.scrollToItem(at:indexpath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
        currentIndex=currentIndex+1;
-        
+       pageContr.currentPage=currentIndex%itemCounts
     }
 
 }

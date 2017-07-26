@@ -1,0 +1,65 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Kingfisher-Swift.h",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Kingfisher-umbrella.h",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Kingfisher.h",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Pods/Kingfisher/Sources/Kingfisher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Build/Intermediates/Pods.build/Debug-iphonesimulator/Kingfisher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Pods_CycleBanner.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-CycleBanner-umbrella.h",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Pods/Target Support Files/Pods-CycleBanner/Pods-CycleBanner-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_CycleBanner-Swift.h",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Pods_CycleBanner.framework/Headers/Pods_CycleBanner-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Pods_CycleBanner.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/tuikai/Desktop/CycleBanner/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-CycleBanner.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

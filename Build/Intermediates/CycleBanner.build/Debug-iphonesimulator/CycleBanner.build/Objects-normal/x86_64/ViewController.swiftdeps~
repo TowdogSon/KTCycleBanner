@@ -11,7 +11,6 @@ provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
 - !private "Array"
-- "AssignmentPrecedence"
 - !private "CGRect"
 - !private "KTBanner"
 - !private "StringLiteralType"
@@ -26,13 +25,11 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "kScreenW"]
 - !private ["Ps9AnyObject", "setUpUI"]
-- !private ["Ps9AnyObject", "timeInterval"]
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "init"]
-- !private ["PSo15CALayerDelegate", "timeInterval"]
 - !private ["VSC6CGRect", "init"]
 - !private ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "KTBanner"]
@@ -40,7 +37,6 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "kScreenW"]
 - !private ["Ps7CVarArg", "setUpUI"]
-- !private ["Ps7CVarArg", "timeInterval"]
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
@@ -51,7 +47,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "kScreenW"]
 - !private ["Ps28CustomDebugStringConvertible", "setUpUI"]
-- !private ["Ps28CustomDebugStringConvertible", "timeInterval"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -63,7 +58,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "kScreenW"]
 - !private ["Ps23CustomStringConvertible", "setUpUI"]
-- !private ["Ps23CustomStringConvertible", "timeInterval"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
@@ -73,7 +67,6 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "kScreenW"]
 - !private ["Ps9Equatable", "setUpUI"]
-- !private ["Ps9Equatable", "timeInterval"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
@@ -86,13 +79,12 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "kScreenW"]
 - !private ["Ps8Hashable", "setUpUI"]
-- !private ["Ps8Hashable", "timeInterval"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - !private ["C11CycleBanner8KTBanner", "deinit"]
 - !private ["C11CycleBanner8KTBanner", "init"]
-- !private ["C11CycleBanner8KTBanner", "timeInterval"]
+- !private ["P10Kingfisher20KingfisherCompatible", "init"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "CGRect"]
@@ -101,7 +93,6 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "kScreenW"]
 - !private ["PSo8NSCoding", "setUpUI"]
-- !private ["PSo8NSCoding", "timeInterval"]
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
@@ -122,7 +113,6 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "kScreenW"]
 - ["CSo8NSObject", "setUpUI"]
-- !private ["CSo8NSObject", "timeInterval"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
@@ -131,7 +121,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "kScreenW"]
 - !private ["PSo16NSObjectProtocol", "setUpUI"]
-- !private ["PSo16NSObjectProtocol", "timeInterval"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
@@ -142,24 +131,19 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "timeInterval"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "init"]
-- !private ["PSo12UIAppearance", "timeInterval"]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "KTBanner"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kScreenW"]
 - !private ["PSo21UIAppearanceContainer", "setUpUI"]
-- !private ["PSo21UIAppearanceContainer", "timeInterval"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo26UICollectionViewDataSource", "init"]
-- !private ["PSo26UICollectionViewDataSource", "timeInterval"]
 - !private ["PSo24UICollectionViewDelegate", "init"]
-- !private ["PSo24UICollectionViewDelegate", "timeInterval"]
 - !private ["PSo18UIContentContainer", "CGRect"]
 - !private ["PSo18UIContentContainer", "KTBanner"]
 - !private ["PSo18UIContentContainer", "init"]
@@ -170,23 +154,19 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "init"]
-- !private ["PSo17UICoordinateSpace", "timeInterval"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "init"]
-- !private ["PSo13UIDynamicItem", "timeInterval"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "KTBanner"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kScreenW"]
 - !private ["PSo18UIFocusEnvironment", "setUpUI"]
-- !private ["PSo18UIFocusEnvironment", "timeInterval"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "init"]
-- !private ["PSo11UIFocusItem", "timeInterval"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "KTBanner"]
 - ["CSo11UIResponder", "Void"]
@@ -194,7 +174,6 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kScreenW"]
 - ["CSo11UIResponder", "setUpUI"]
-- !private ["CSo11UIResponder", "timeInterval"]
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "CGRect"]
@@ -203,12 +182,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "kScreenW"]
 - !private ["PSo30UIResponderStandardEditActions", "setUpUI"]
-- !private ["PSo30UIResponderStandardEditActions", "timeInterval"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo20UIScrollViewDelegate", "init"]
-- !private ["PSo20UIScrollViewDelegate", "timeInterval"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "KTBanner"]
 - !private ["PSo16UIStateRestoring", "init"]
@@ -223,12 +200,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kScreenW"]
 - !private ["PSo18UITraitEnvironment", "setUpUI"]
-- !private ["PSo18UITraitEnvironment", "timeInterval"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addSubview"]
-- !private ["CSo6UIView", "timeInterval"]
 - !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "KTBanner"]
 - ["CSo16UIViewController", "Void"]
@@ -249,7 +224,6 @@ depends-member:
 - ["C11CycleBanner14ViewController", "viewDidLoad"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "timeInterval"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
@@ -262,7 +236,6 @@ depends-member:
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "kScreenW"]
 - !private ["Ps9_Hashable", "setUpUI"]
-- !private ["Ps9_Hashable", "timeInterval"]
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
@@ -283,6 +256,7 @@ depends-nominal:
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - !private "C11CycleBanner8KTBanner"
+- !private "P10Kingfisher20KingfisherCompatible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "PSo8NSCoding"
@@ -331,6 +305,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/Kingfisher.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
@@ -341,4 +316,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-umbrella.h"
+- "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher.h"
+- "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
+- "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/module.modulemap"
 interface-hash: "223a7ff007f50c61465a53a0df673043"

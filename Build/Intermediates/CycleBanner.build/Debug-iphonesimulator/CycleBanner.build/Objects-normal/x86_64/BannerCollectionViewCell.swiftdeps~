@@ -7,15 +7,19 @@ provides-member:
 - ["C11CycleBanner24BannerCollectionViewCell", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
+- "image"
 depends-top-level:
 - "BannerCollectionViewCell"
 - "UICollectionViewCell"
+- "UIImageView"
 depends-member:
 - !private ["Ps9AnyObject", "awakeFromNib"]
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
+- ["C11CycleBanner24BannerCollectionViewCell", "UIImageView"]
 - ["C11CycleBanner24BannerCollectionViewCell", "awakeFromNib"]
 - ["C11CycleBanner24BannerCollectionViewCell", "deinit"]
+- ["C11CycleBanner24BannerCollectionViewCell", "image"]
 - ["C11CycleBanner24BannerCollectionViewCell", "init"]
 - !private ["PSo15CALayerDelegate", "awakeFromNib"]
 - !private ["PSo15CALayerDelegate", "init"]
@@ -38,7 +42,9 @@ depends-member:
 - !private ["PSo8NSCoding", "awakeFromNib"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - !private ["PSo16NSObjectProtocol", "awakeFromNib"]
 - !private ["PSo16NSObjectProtocol", "init"]
@@ -52,9 +58,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "awakeFromNib"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "UIImageView"]
 - ["CSo24UICollectionReusableView", "awakeFromNib"]
+- ["CSo24UICollectionReusableView", "image"]
 - ["CSo24UICollectionReusableView", "init"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
 - ["CSo20UICollectionViewCell", "awakeFromNib"]
+- ["CSo20UICollectionViewCell", "image"]
 - ["CSo20UICollectionViewCell", "init"]
 - ["CSo20UICollectionViewCell", ""]
 - !private ["PSo17UICoordinateSpace", "awakeFromNib"]
@@ -69,7 +79,9 @@ depends-member:
 - !private ["PSo11UIFocusItem", "awakeFromNib"]
 - !private ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", ""]
+- ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "awakeFromNib"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
@@ -77,7 +89,9 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "awakeFromNib"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "image"]
 - ["CSo6UIView", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "awakeFromNib"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
@@ -130,4 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "d0f3323db604196c4fdc679badc4e619"
+interface-hash: "071ea1c380fda4fb428e1a2602549c15"

@@ -166,16 +166,35 @@ SWIFT_CLASS("_TtC11CycleBanner24BannerCollectionViewCell")
 @end
 
 @class NSTimer;
+@class UIPageControl;
 @class UICollectionView;
 
 SWIFT_CLASS("_TtC11CycleBanner8KTBanner")
 @interface KTBanner : UIView
 @property (nonatomic, strong) NSTimer * _Null_unspecified timer;
-@property (nonatomic, copy) NSArray<NSString *> * _Null_unspecified imageNames;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable imageNames;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable imageUrls;
+@property (nonatomic, strong) UIPageControl * _Null_unspecified pageContr;
+@property (nonatomic, readonly) NSInteger itemCounts;
 @property (nonatomic) NSTimeInterval _timeInterval;
 @property (nonatomic) NSTimeInterval timeInterval;
 @property (nonatomic, strong) UICollectionView * _Nonnull collectionView;
+/// 显示本地图片的轮播图
+/// \param frame frame
+///
+/// \param imageNames images
+///
+/// \param timeInterVal eg:3
+///
 - (nonnull instancetype)initWithFrame:(CGRect)frame imageNames:(NSArray<NSString *> * _Nonnull)imageNames timeInterVal:(NSTimeInterval)timeInterVal OBJC_DESIGNATED_INITIALIZER;
+/// 网络图片显示
+/// \param frame frame
+///
+/// \param imageUrls urls
+///
+/// \param timeInterVal eg:3
+///
+- (nonnull instancetype)initWithFrame:(CGRect)frame imageUrls:(NSArray<NSString *> * _Nonnull)imageUrls timeInterVal:(NSTimeInterval)timeInterVal OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

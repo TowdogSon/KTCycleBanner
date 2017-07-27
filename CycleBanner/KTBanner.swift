@@ -64,6 +64,7 @@ class KTBanner: UIView {
         collectView.backgroundColor = UIColor.white
         collectView.delegate=self
         collectView.dataSource=self
+        collectView.isPagingEnabled=true
         collectView.register(UINib(nibName: "BannerCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Kcell)
 
         return collectView
@@ -139,7 +140,7 @@ extension KTBanner:UICollectionViewDelegate,UICollectionViewDataSource{
 
 //MARK:privateMethod
 
-extension KTBanner{
+extension KTBanner:UIScrollViewDelegate{
     
     func setUp(){
         //pageContr
@@ -169,10 +170,14 @@ extension KTBanner{
         }
        let indexpath = IndexPath(row: currentIndex+1, section: 0)
        collectionView.scrollToItem(at:indexpath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
-       currentIndex=currentIndex+1;
-       pageContr.currentPage=currentIndex%itemCounts
+  
     }
 
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        currentIndex = Int((collectionView.contentOffset.x+(0.5*kScreenW))/kScreenW)
+        print("\(collectionView.contentOffset.x)/\(kScreenW)=\(currentIndex-1)")
+        pageContr.currentPage=currentIndex%itemCounts
+    }
 }
 
 

@@ -199,14 +199,16 @@ SWIFT_CLASS("_TtC11CycleBanner8KTBanner")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class UIScrollView;
 
-@interface KTBanner (SWIFT_EXTENSION(CycleBanner))
+@interface KTBanner (SWIFT_EXTENSION(CycleBanner)) <UIScrollViewDelegate>
 - (void)setUp;
 - (void)scrollToNext;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 @end
 
 
-@interface KTBanner (SWIFT_EXTENSION(CycleBanner)) <UICollectionViewDelegate, UIScrollViewDelegate, UICollectionViewDataSource>
+@interface KTBanner (SWIFT_EXTENSION(CycleBanner)) <UICollectionViewDelegate, UICollectionViewDataSource>
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;

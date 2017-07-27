@@ -21,13 +21,19 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController{
+extension ViewController:KTBannerDelegate{
     
     func setUpUI() -> Void {
 
         let rect = CGRect(x: 0, y: 0, width: kScreenW, height: 200)
         let bannerView = KTBanner(frame: rect, imageNames: ["hulu","life"], timeInterVal: 3)
+        bannerView.delegate=self;
         view.addSubview(bannerView)
  
     }
+    
+    func KTBannerClicked(Index: Int) {
+        print(Index)
+    }
+    
 }

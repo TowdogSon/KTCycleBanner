@@ -12,6 +12,13 @@ let kScreenW = UIScreen.main.bounds.width
 let kScreenH = UIScreen.main.bounds.height
 let Kcell    = "bannerCell"
 
+protocol KTBannerDelegate {
+    func KTBannerClicked(Index:Int)
+    
+}
+
+
+
 class KTBanner: UIView {
 
     //声明属性
@@ -21,6 +28,7 @@ class KTBanner: UIView {
     var imageUrls:[String]?
     var totalCount:Int!
     var pageContr : UIPageControl!
+    var delegate : KTBannerDelegate?
     var itemCounts : Int{
 
         get{
@@ -99,29 +107,15 @@ class KTBanner: UIView {
 //扩展
 extension KTBanner:UICollectionViewDelegate,UICollectionViewDataSource{
     
-    func setUp(){
-        //pageContr
-        pageContr = UIPageControl(frame: CGRect(x:(kScreenW/2)-50, y: self.bounds.height-30, width:100, height:30))
-        pageContr.numberOfPages=itemCounts
-        addSubview(collectionView)
-        if pageContr.numberOfPages>1 {
-         addSubview(pageContr)
-        }
-        
-        currentIndex=0
-        timer = Timer.scheduledTimer(withTimeInterval:TimeInterval(timeInterval), repeats: true, block: { (timer) in
-            self.scrollToNext()
-        })
-        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
-    }
-    
+ 
+    //MARK:
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Kcell, for: indexPath) as!BannerCollectionViewCell
         let i = indexPath.row%itemCounts
         
-        guard  imageUrls != nil else {
-         
-            cell.image.image=UIImage(named:imageNames![i])
+        //可选绑定
+        if let images = imageNames {
+            cell.image.image=UIImage(named:images[i])
             return cell
         }
        
@@ -134,12 +128,35 @@ extension KTBanner:UICollectionViewDelegate,UICollectionViewDataSource{
         return totalCount
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      
+        if let delegate = delegate {
+            delegate.KTBannerClicked(Index: indexPath.row%itemCounts)
+        }
+    }
    
 }
 
+//MARK:privateMethod
+
 extension KTBanner{
     
- 
+    func setUp(){
+        //pageContr
+        pageContr = UIPageControl(frame: CGRect(x:(kScreenW/2)-50, y: self.bounds.height-30, width:100, height:30))
+        pageContr.numberOfPages=itemCounts
+        addSubview(collectionView)
+        if pageContr.numberOfPages>1 {
+            addSubview(pageContr)
+        }
+        
+        currentIndex=0
+        timer = Timer.scheduledTimer(withTimeInterval:TimeInterval(timeInterval), repeats: true, block: { (timer) in
+            self.scrollToNext()
+        })
+        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+    }
+    
     func scrollToNext() -> Void {
         if currentIndex+1>=totalCount {
            

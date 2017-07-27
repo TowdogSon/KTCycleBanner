@@ -3,11 +3,15 @@ provides-top-level:
 - "kScreenW"
 - "kScreenH"
 - "Kcell"
+- "KTBannerDelegate"
 - "KTBanner"
 provides-nominal:
+- "P11CycleBanner16KTBannerDelegate"
 - "C11CycleBanner8KTBanner"
 provides-member:
+- ["P11CycleBanner16KTBannerDelegate", ""]
 - ["C11CycleBanner8KTBanner", ""]
+- ["C11CycleBanner8KTBanner", "setUp"]
 - ["C11CycleBanner8KTBanner", "scrollToNext"]
 provides-dynamic-lookup:
 - "_timeInterval"
@@ -38,6 +42,7 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - "KTBanner"
+- "KTBannerDelegate"
 - "Kcell"
 - "NSCoder"
 - !private "RunLoop"
@@ -637,6 +642,7 @@ depends-member:
 - !private ["C11CycleBanner8KTBanner", "CGSize"]
 - ["C11CycleBanner8KTBanner", "IndexPath"]
 - ["C11CycleBanner8KTBanner", "Int"]
+- ["C11CycleBanner8KTBanner", "KTBannerDelegate"]
 - !private ["C11CycleBanner8KTBanner", "Kcell"]
 - ["C11CycleBanner8KTBanner", "NSCoder"]
 - !private ["C11CycleBanner8KTBanner", "RunLoop"]
@@ -662,6 +668,7 @@ depends-member:
 - !private ["C11CycleBanner8KTBanner", "collectionView.storage"]
 - ["C11CycleBanner8KTBanner", "currentIndex"]
 - ["C11CycleBanner8KTBanner", "deinit"]
+- ["C11CycleBanner8KTBanner", "delegate"]
 - !private ["C11CycleBanner8KTBanner", "fatalError"]
 - ["C11CycleBanner8KTBanner", "imageNames"]
 - ["C11CycleBanner8KTBanner", "imageUrls"]
@@ -694,6 +701,8 @@ depends-member:
 - ["C11CycleBanner8KTBanner", "totalCount"]
 - ["C11CycleBanner8KTBanner", "viewForZooming"]
 - ["C11CycleBanner8KTBanner", "viewForZoomingInScrollView"]
+- ["P11CycleBanner16KTBannerDelegate", "Int"]
+- ["P11CycleBanner16KTBannerDelegate", "KTBannerClicked"]
 - !private ["C10Kingfisher10Kingfisher", "setImage"]
 - !private ["P10Kingfisher20KingfisherCompatible", "image"]
 - ["P10Kingfisher20KingfisherCompatible", "init"]
@@ -782,6 +791,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "KTBannerDelegate"]
 - !private ["CSo8NSObject", "Kcell"]
 - ["CSo8NSObject", "NSCoder"]
 - !private ["CSo8NSObject", "RunLoop"]
@@ -810,7 +820,7 @@ depends-member:
 - ["CSo8NSObject", "currentIndex"]
 - !private ["CSo8NSObject", "currentPage"]
 - !private ["CSo8NSObject", "dataSource"]
-- !private ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "fatalError"]
 - !private ["CSo8NSObject", "image"]
@@ -1184,6 +1194,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "bounds"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "currentIndex"]
+- !private ["PSo26UICollectionViewDataSource", "delegate"]
 - !private ["PSo26UICollectionViewDataSource", "fatalError"]
 - !private ["PSo26UICollectionViewDataSource", "imageNames"]
 - !private ["PSo26UICollectionViewDataSource", "imageUrls"]
@@ -1238,6 +1249,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "bounds"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "currentIndex"]
+- !private ["PSo24UICollectionViewDelegate", "delegate"]
 - !private ["PSo24UICollectionViewDelegate", "fatalError"]
 - !private ["PSo24UICollectionViewDelegate", "imageNames"]
 - !private ["PSo24UICollectionViewDelegate", "imageUrls"]
@@ -1556,6 +1568,7 @@ depends-member:
 - !private ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "KTBannerDelegate"]
 - !private ["CSo11UIResponder", "Kcell"]
 - ["CSo11UIResponder", "NSCoder"]
 - !private ["CSo11UIResponder", "RunLoop"]
@@ -1583,7 +1596,7 @@ depends-member:
 - ["CSo11UIResponder", "currentIndex"]
 - !private ["CSo11UIResponder", "currentPage"]
 - !private ["CSo11UIResponder", "dataSource"]
-- !private ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - !private ["CSo11UIResponder", "fatalError"]
 - !private ["CSo11UIResponder", "image"]
@@ -1718,6 +1731,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "bounds"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "currentIndex"]
+- !private ["PSo20UIScrollViewDelegate", "delegate"]
 - !private ["PSo20UIScrollViewDelegate", "fatalError"]
 - !private ["PSo20UIScrollViewDelegate", "imageNames"]
 - !private ["PSo20UIScrollViewDelegate", "imageUrls"]
@@ -1821,6 +1835,7 @@ depends-member:
 - !private ["CSo6UIView", "CGSize"]
 - ["CSo6UIView", "IndexPath"]
 - ["CSo6UIView", "Int"]
+- ["CSo6UIView", "KTBannerDelegate"]
 - !private ["CSo6UIView", "Kcell"]
 - ["CSo6UIView", "NSCoder"]
 - !private ["CSo6UIView", "RunLoop"]
@@ -1848,7 +1863,7 @@ depends-member:
 - ["CSo6UIView", "currentIndex"]
 - !private ["CSo6UIView", "currentPage"]
 - !private ["CSo6UIView", "dataSource"]
-- !private ["CSo6UIView", "delegate"]
+- ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
 - !private ["CSo6UIView", "fatalError"]
 - !private ["CSo6UIView", "image"]
@@ -2111,6 +2126,7 @@ depends-nominal:
 - "Ps8Hashable"
 - !private "V10Foundation9IndexPath"
 - "C11CycleBanner8KTBanner"
+- "P11CycleBanner16KTBannerDelegate"
 - !private "C10Kingfisher10Kingfisher"
 - "P10Kingfisher20KingfisherCompatible"
 - "Ps25LosslessStringConvertible"
@@ -2220,4 +2236,4 @@ depends-external:
 - "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher.h"
 - "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
 - "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/module.modulemap"
-interface-hash: "02c5e036653cc4b3d5705385d9dc517d"
+interface-hash: "498536520e83b7cfc88f8d1b66891343"

@@ -175,7 +175,6 @@ extension KTBanner:UIScrollViewDelegate{
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         currentIndex = Int((collectionView.contentOffset.x+(0.5*kScreenW))/kScreenW)
-        print("\(collectionView.contentOffset.x)/\(kScreenW)=\(currentIndex-1)")
         pageContr.currentPage=currentIndex%itemCounts
     }
 }

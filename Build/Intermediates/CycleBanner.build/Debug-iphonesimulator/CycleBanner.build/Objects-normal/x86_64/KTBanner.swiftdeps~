@@ -19,7 +19,6 @@ provides-dynamic-lookup:
 - "itemCounts"
 - "pageContr"
 - "scrollToNext"
-- "scrollViewDidEndDragging"
 - "scrollViewDidScroll"
 - "setUp"
 - "timeInterval"
@@ -35,7 +34,6 @@ depends-top-level:
 - !private ">="
 - "AssignmentPrecedence"
 - !private "BannerCollectionViewCell"
-- "Bool"
 - "BooleanLiteralType"
 - "CGRect"
 - !private "CGSize"
@@ -680,7 +678,6 @@ depends-member:
 - !private ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "init"]
 - !private ["C11CycleBanner8KTBanner", "BannerCollectionViewCell"]
-- ["C11CycleBanner8KTBanner", "Bool"]
 - ["C11CycleBanner8KTBanner", "CGRect"]
 - !private ["C11CycleBanner8KTBanner", "CGSize"]
 - ["C11CycleBanner8KTBanner", "IndexPath"]
@@ -836,7 +833,6 @@ depends-member:
 - !private ["PSo9NSCopying", "white"]
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "BannerCollectionViewCell"]
-- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGSize"]
 - ["CSo8NSObject", "IndexPath"]
@@ -1657,7 +1653,6 @@ depends-member:
 - !private ["CSo13UIPageControl", "init"]
 - !private ["CSo13UIPageControl", "numberOfPages"]
 - !private ["CSo11UIResponder", "BannerCollectionViewCell"]
-- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGSize"]
 - ["CSo11UIResponder", "IndexPath"]
@@ -1941,7 +1936,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "BannerCollectionViewCell"]
-- ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "CGSize"]
 - ["CSo6UIView", "IndexPath"]
@@ -2374,4 +2368,4 @@ depends-external:
 - "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher.h"
 - "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
 - "/Users/tuikai/Desktop/CycleBanner/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules/module.modulemap"
-interface-hash: "891cae16092644a0700153db3145eca8"
+interface-hash: "6fa0381a098c4f1ab36871d9300adc61"

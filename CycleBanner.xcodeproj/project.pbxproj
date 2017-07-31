@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		27422C464FDAC1D117B16F05 /* Pods_CycleBannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19714F7891656D1FD1141D3 /* Pods_CycleBannerUITests.framework */; };
 		9C9D36EFA41A9009E78FC65E /* Pods_CycleBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 770F6D6EE1E216F0A91AC38C /* Pods_CycleBanner.framework */; };
+		A452F7061F2EDB9A0072E8A1 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452F7031F2EDB9A0072E8A1 /* BannerCollectionViewCell.swift */; };
+		A452F7071F2EDB9A0072E8A1 /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A452F7041F2EDB9A0072E8A1 /* BannerCollectionViewCell.xib */; };
+		A452F7081F2EDB9A0072E8A1 /* KTBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A452F7051F2EDB9A0072E8A1 /* KTBanner.swift */; };
 		A477A1E51F25C7B900AB282F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A1E41F25C7B900AB282F /* AppDelegate.swift */; };
 		A477A1E71F25C7B900AB282F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A1E61F25C7B900AB282F /* ViewController.swift */; };
 		A477A1EA1F25C7B900AB282F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477A1E81F25C7B900AB282F /* Main.storyboard */; };
@@ -16,10 +19,7 @@
 		A477A1EF1F25C7B900AB282F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A477A1ED1F25C7B900AB282F /* LaunchScreen.storyboard */; };
 		A477A1FA1F25C7B900AB282F /* CycleBannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A1F91F25C7B900AB282F /* CycleBannerTests.swift */; };
 		A477A2051F25C7B900AB282F /* CycleBannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A2041F25C7B900AB282F /* CycleBannerUITests.swift */; };
-		A477A2171F25D0E200AB282F /* KTBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A2161F25D0E200AB282F /* KTBanner.swift */; };
 		A477A2191F25DC5F00AB282F /* UIColor-Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A477A2181F25DC5F00AB282F /* UIColor-Extention.swift */; };
-		A4934ACA1F2736FE0055F76F /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4934AC81F2736FE0055F76F /* BannerCollectionViewCell.swift */; };
-		A4934ACB1F2736FE0055F76F /* BannerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4934AC91F2736FE0055F76F /* BannerCollectionViewCell.xib */; };
 		C1F3A8955D7D8917DE26A666 /* Pods_CycleBannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF63F9152429F36A3500E5B6 /* Pods_CycleBannerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +45,9 @@
 		5E95669A3EF2478DA30ABE90 /* Pods-CycleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleBanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CycleBanner/Pods-CycleBanner.debug.xcconfig"; sourceTree = "<group>"; };
 		770F6D6EE1E216F0A91AC38C /* Pods_CycleBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CycleBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8E6C34F6C93BFE17EA73C2 /* Pods-CycleBannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleBannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CycleBannerTests/Pods-CycleBannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A452F7031F2EDB9A0072E8A1 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		A452F7041F2EDB9A0072E8A1 /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
+		A452F7051F2EDB9A0072E8A1 /* KTBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTBanner.swift; sourceTree = "<group>"; };
 		A477A1E11F25C7B900AB282F /* CycleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CycleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477A1E41F25C7B900AB282F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A477A1E61F25C7B900AB282F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,10 +61,7 @@
 		A477A2001F25C7B900AB282F /* CycleBannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CycleBannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477A2041F25C7B900AB282F /* CycleBannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CycleBannerUITests.swift; sourceTree = "<group>"; };
 		A477A2061F25C7B900AB282F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A477A2161F25D0E200AB282F /* KTBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KTBanner.swift; sourceTree = "<group>"; };
 		A477A2181F25DC5F00AB282F /* UIColor-Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extention.swift"; sourceTree = "<group>"; };
-		A4934AC81F2736FE0055F76F /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
-		A4934AC91F2736FE0055F76F /* BannerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerCollectionViewCell.xib; sourceTree = "<group>"; };
 		CF63F9152429F36A3500E5B6 /* Pods_CycleBannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CycleBannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E3411EB3A195F790650661 /* Pods-CycleBannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleBannerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CycleBannerUITests/Pods-CycleBannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E19714F7891656D1FD1141D3 /* Pods_CycleBannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CycleBannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +107,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A452F7021F2EDB9A0072E8A1 /* KTBanner */ = {
+			isa = PBXGroup;
+			children = (
+				A452F7031F2EDB9A0072E8A1 /* BannerCollectionViewCell.swift */,
+				A452F7041F2EDB9A0072E8A1 /* BannerCollectionViewCell.xib */,
+				A452F7051F2EDB9A0072E8A1 /* KTBanner.swift */,
+			);
+			path = KTBanner;
+			sourceTree = "<group>";
+		};
 		A477A1D81F25C7B900AB282F = {
 			isa = PBXGroup;
 			children = (
@@ -135,9 +145,7 @@
 				A477A2181F25DC5F00AB282F /* UIColor-Extention.swift */,
 				A477A1E41F25C7B900AB282F /* AppDelegate.swift */,
 				A477A1E61F25C7B900AB282F /* ViewController.swift */,
-				A477A2161F25D0E200AB282F /* KTBanner.swift */,
-				A4934AC81F2736FE0055F76F /* BannerCollectionViewCell.swift */,
-				A4934AC91F2736FE0055F76F /* BannerCollectionViewCell.xib */,
+				A452F7021F2EDB9A0072E8A1 /* KTBanner */,
 				A477A1E81F25C7B900AB282F /* Main.storyboard */,
 				A477A1EB1F25C7B900AB282F /* Assets.xcassets */,
 				A477A1ED1F25C7B900AB282F /* LaunchScreen.storyboard */,
@@ -298,7 +306,7 @@
 			files = (
 				A477A1EF1F25C7B900AB282F /* LaunchScreen.storyboard in Resources */,
 				A477A1EC1F25C7B900AB282F /* Assets.xcassets in Resources */,
-				A4934ACB1F2736FE0055F76F /* BannerCollectionViewCell.xib in Resources */,
+				A452F7071F2EDB9A0072E8A1 /* BannerCollectionViewCell.xib in Resources */,
 				A477A1EA1F25C7B900AB282F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,10 +470,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A477A2171F25D0E200AB282F /* KTBanner.swift in Sources */,
+				A452F7081F2EDB9A0072E8A1 /* KTBanner.swift in Sources */,
 				A477A1E71F25C7B900AB282F /* ViewController.swift in Sources */,
 				A477A2191F25DC5F00AB282F /* UIColor-Extention.swift in Sources */,
-				A4934ACA1F2736FE0055F76F /* BannerCollectionViewCell.swift in Sources */,
+				A452F7061F2EDB9A0072E8A1 /* BannerCollectionViewCell.swift in Sources */,
 				A477A1E51F25C7B900AB282F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

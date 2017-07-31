@@ -1,9 +1,9 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
 options: "377ee979a26e926fb579b744977f309a"
-build_time: [554548961, 426665000]
+build_time: [554786970, 718951000]
 inputs:
-  "/Users/tuikai/Desktop/CycleBanner/CycleBanner/KTBanner.swift": [554456623, 0]
+  "/Users/tuikai/Desktop/CycleBanner/CycleBanner/KTBanner/KTBanner.swift": [554549628, 0]
   "/Users/tuikai/Desktop/CycleBanner/CycleBanner/ViewController.swift": [554455579, 0]
   "/Users/tuikai/Desktop/CycleBanner/CycleBanner/UIColor-Extention.swift": [553587819, 0]
-  "/Users/tuikai/Desktop/CycleBanner/CycleBanner/BannerCollectionViewCell.swift": [554286272, 0]
+  "/Users/tuikai/Desktop/CycleBanner/CycleBanner/KTBanner/BannerCollectionViewCell.swift": [554286272, 0]
   "/Users/tuikai/Desktop/CycleBanner/CycleBanner/AppDelegate.swift": [554192057, 0]
